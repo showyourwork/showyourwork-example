@@ -14,9 +14,6 @@ jobs:
         with:
           fetch-depth: 0
           
-      - run: |
-          rm -rf src/tex/output
-
       - name: Build the article PDF
         id: build
         uses: showyourwork/showyourwork-action@v1
