@@ -2,7 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import paths
 
+assert (paths.data / "B.tar.gz").exists()
+
 fig = plt.figure()
-data = np.loadtxt(paths.data / "dataset_copy.txt", delimiter=" ")
-plt.plot(data)
+plt.plot(np.random.randn(1000))
 fig.savefig(paths.figures / "figure.pdf")
