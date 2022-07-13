@@ -5,8 +5,10 @@ render_dag: True
 datasets:
   10.5281/zenodo.6515864:
     contents:
-      images.tar.gz: src/data/A.tar.gz
+      images.tar.gz: src/data/A.dat
 
 dependencies:
-  src/scripts/figure.py:
-    - src/data/B.tar.gz
+  src/scripts/figure1.py:
+    - src/data/B.dat
+  src/scripts/figure2.py:
+    - src/data/D.dat
