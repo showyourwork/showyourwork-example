@@ -16,10 +16,7 @@ jobs:
 
       - name: Build the article PDF
         id: build
-        uses: showyourwork/showyourwork-action@2facaa4310c2a9f027f175d46775b6df90ddc56c
-        with:
-          conda-cache-number: 2
-          article-cache-number: 2
+        uses: showyourwork/showyourwork-action@v1
         env:
           SANDBOX_TOKEN: ${{ secrets.SANDBOX_TOKEN }}
           OVERLEAF_EMAIL: ${{ secrets.OVERLEAF_EMAIL }}

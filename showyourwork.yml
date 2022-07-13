@@ -1,7 +1,5 @@
 version: eb9b8c28b31f959b0d26c75bfe4a382e17419555
 
-render_dag: True
-
 datasets:
   10.5281/zenodo.6515864:
     contents:
